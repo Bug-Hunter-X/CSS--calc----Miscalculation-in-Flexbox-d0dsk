@@ -1,0 +1,14 @@
+/* bugSolution.css */
+.container {
+  display: flex;
+  width: 500px; /* Explicit width for the parent */
+  height: 300px;
+}
+
+.item {
+  flex: 1;
+  background-color: lightblue;
+  margin: 5px;
+  /* Corrected use of calc() after parent container is sized */
+  width: calc(100% - 10px);
+}
